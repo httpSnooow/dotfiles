@@ -1,0 +1,16 @@
+{
+  "window_hiding_behaviour": "Cloak",
+  "default_workspace_padding": 15,
+  "default_container_padding": 15,
+  "border": true,
+  "border_width": 2,
+  "monitors": [
+    {
+      "workspaces": [
+        { "name": "1", "layout": "BSP" },
+        { "name": "2", "layout": "BSP" },
+        { "name": "3", "layout": "BSP" }
+      ]
+    }
+  ]
+}

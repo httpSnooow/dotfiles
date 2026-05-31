@@ -1,0 +1,12 @@
+.shell powershell
+alt + q : komorebic close
+alt + f : komorebic toggle-float
+alt + return : wt.exe -w -1
+alt + left : komorebic focus left
+alt + down : komorebic focus down
+alt + up : komorebic focus up
+alt + right : komorebic focus right
+alt + shift + left : komorebic move left
+alt + shift + down : komorebic move down
+alt + shift + up : komorebic move up
+alt + shift + right : komorebic move right

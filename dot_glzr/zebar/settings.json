@@ -1,0 +1,15 @@
+{
+  "$schema": "https://github.com/glzr-io/zebar/raw/v3.3.1/resources/settings-schema.json",
+  "startupConfigs": [
+    {
+      "pack": "m4rshe1.zebar-rose-pine-pp",
+      "widget": "glazewm",
+      "preset": "default"
+    },
+    {
+      "pack": "blaiyz.neosoft-zebar",
+      "widget": "default",
+      "preset": "default"
+    }
+  ]
+}

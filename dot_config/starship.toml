@@ -1,0 +1,20 @@
+format = """
+[┌\\[](bold blue)$username[\\]](bold blue)
+[└\\[](bold blue)$directory[\\]](bold blue)
+$character"""
+
+[username]
+show_always = true
+style_user = "fg:white"
+style_root = "fg:red"
+format = "[gui]($style)"
+
+[directory]
+style = "fg:white"
+format = "[$path]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[character]
+success_symbol = " [λ](bold green)"
+error_symbol = " [λ](bold red)"

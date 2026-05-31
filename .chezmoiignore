@@ -1,0 +1,17 @@
+﻿# Logs e arquivos temporários
+*.log
+*.bak
+*.tmp
+
+# Cache do zebar (pesado demais para versionar)
+AppData/Roaming/zebar/webview-cache/**
+AppData/Roaming/zebar/downloads/**
+
+# node_modules dos temas zebar
+**/node_modules/**
+
+# Arquivos de sistema Windows
+*.dat
+*.dat.log*
+ntuser.*
+NTUSER.*
