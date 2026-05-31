@@ -1,0 +1,58 @@
+/* Nebula */
+@import "Nebula/Nebula.css";
+
+.titlebar-buttonbox {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-right: 12px !important;
+}
+
+.titlebar-button {
+    appearance: none !important;
+    -moz-appearance: none !important;
+    border-radius: 50% !important;
+    width: 12px !important;
+    height: 12px !important;
+    min-width: 12px !important;
+    min-height: 12px !important;
+    padding: 0 !important;
+    margin: 0 4px !important;
+    transition: background-color 0.2s ease !important;
+    
+    color: transparent !important;
+    fill: transparent !important;
+    stroke: transparent !important;
+}
+
+.titlebar-button > * {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+.titlebar-close {
+    background-color: #FF5F56 !important;
+    border: 1px solid #E0443E !important;
+}
+.titlebar-close:hover {
+    background-color: #FF746D !important;
+}
+
+.titlebar-min {
+    background-color: #FFBD2E !important;
+    border: 1px solid #DEA123 !important;
+}
+.titlebar-min:hover {
+    background-color: #FFD043 !important;
+}
+
+.titlebar-max,
+.titlebar-restore {
+    background-color: #27C93F !important;
+    border: 1px solid #1AAB29 !important;
+}
+.titlebar-max:hover,
+.titlebar-restore:hover {
+    background-color: #40D657 !important;
+}

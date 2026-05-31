@@ -1,0 +1,55 @@
+{
+    "dart.flutterSdkPath": "C:\\flutter",
+    "glassit.alpha": 220,
+    // Esconde a Activity Bar (aquela barra lateral de ícones gigante)
+    "workbench.activityBar.location": "hidden",
+    // Esconde a barra de status inferior (menos poluição visual)
+    "workbench.statusBar.visible": false,
+    // Esconde as abas superiores (já que você navega via teclado/buscas)
+    "workbench.editor.showTabs": "none",
+    // Remove a trilha de navegação (breadcrumbs) do topo do arquivo
+    "breadcrumbs.enabled": false,
+    "window.titleBarStyle": "custom",
+    "editor.minimap.enabled": false,
+    "workbench.layoutControl.enabled": false,
+    "window.commandCenter": false,
+    "editor.fontFamily": "'JetBrainsMono Nerd Font', 'Fira Code', monospace",
+    "editor.fontLigatures": true, // Junta símbolos (ex: -> vira uma seta)
+    "editor.cursorStyle": "block", // Cursor em bloco (padrão Vim)
+    "editor.cursorBlinking": "solid", // Cursor não pisca (foco total)
+    "editor.cursorSmoothCaretAnimation": "on", // Movimento fluido do cursor
+    // Customização de cores para splits (janelas lado a lado)
+    "workbench.colorCustomizations": {
+        "editorGroup.border": "#555555", // Destaca a linha divisória entre arquivos abertos
+        "editorGroup.dropBackground": "#33333388" // Cor ao arrastar um painel
+    },
+    "editor.smoothScrolling": true,
+    "workbench.list.smoothScrolling": true,
+    "terminal.integrated.smoothScrolling": true, // Oculta a barra de rolagem vertical e horizontal do editor
+    "editor.scrollbar.vertical": "hidden",
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.overviewRulerBorder": false,
+    // ==========================================
+    // 3. PRODUTIVIDADE E CÓDIGO (Ideal para Java/Kotlin/C++)
+    // ==========================================
+    "editor.formatOnSave": true, // Formata automaticamente ao salvar
+    "files.autoSave": "onFocusChange", // Salva sozinho ao mudar de janela ou terminal
+    "editor.inlayHints.enabled": "onUnlessPressed", // Mostra o tipo da variável sutilmente (ajuda muito em Kotlin/Java)
+    "editor.bracketPairColorization.enabled": true, // Colore chaves e parênteses nativamente
+    "editor.guides.bracketPairs": "active", // Destaca a linha vertical do bloco de código atual
+    "explorer.autoReveal": false,
+    "vim.useCtrlKeys": false,
+    "workbench.colorTheme": "GitHub Dark Default",
+    // Garante que o terminal use a JetBrainsMono com os ícones
+    "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
+    "terminal.integrated.cursorStyle": "block",
+    "terminal.integrated.cursorBlinking": true,
+    "telemetry.telemetryLevel": "off",
+    "workbench.enableExperiments": false,
+    "kotlin.languageServer.enabled": false,
+    "kotlin.debugAdapter.enabled": false,
+    "window.customTitleBarVisibility": "never",
+    "extensions.ignoreRecommendations": true,
+    "window.menuBarVisibility": "compact",
+    "window.title": " ",
+}

@@ -1,0 +1,90 @@
+{
+  "app": {
+    "latestVersion": "1.7.3",
+    "version": "1.7.3"
+  },
+  "id": "{294E435C-52E2-4C85-9CAE-B439F5672EBC}",
+  "mods": {
+    "windows-11-start-menu-styler": {
+      "version": "1.4.1",
+      "latestVersion": "1.5.2"
+    },
+    "windows-11-taskbar-styler": {
+      "version": "1.7",
+      "latestVersion": "1.7"
+    },
+    "windows-11-file-explorer-styler": {
+      "version": "1.4",
+      "latestVersion": "1.4"
+    },
+    "taskbar-icon-size": {
+      "version": "1.3.6",
+      "latestVersion": "1.3.7",
+      "disabled": true
+    },
+    "taskbar-vertical": {
+      "version": "1.3.10",
+      "latestVersion": "1.3.11",
+      "disabled": true
+    },
+    "explorer-details-better-file-sizes": {
+      "version": "1.5",
+      "latestVersion": "1.5"
+    },
+    "taskbar-dock-animation": {
+      "version": "1.9.2",
+      "latestVersion": "1.9.2"
+    },
+    "translucent-windows": {
+      "version": "1.7.4",
+      "latestVersion": "1.7.4"
+    },
+    "dark-menus": {
+      "version": "1.4.2",
+      "latestVersion": "1.4.2"
+    },
+    "taskbar-start-button-position": {
+      "version": "1.2.4",
+      "disabled": true,
+      "latestVersion": "1.2.4"
+    },
+    "hide-start-button": {
+      "version": "1.0",
+      "latestVersion": "1.0"
+    },
+    "windows-11-start-menu-buttons": {
+      "version": "2.1",
+      "disabled": true,
+      "latestVersion": "2.1"
+    },
+    "windows-11-notification-center-styler": {
+      "version": "1.5",
+      "latestVersion": "1.5"
+    },
+    "taskbar-tray-system-icon-tweaks": {
+      "version": "1.3",
+      "latestVersion": "1.3"
+    },
+    "invisible-borders": {
+      "version": "1.0.0",
+      "latestVersion": "1.0.0"
+    },
+    "fix-explorer-white-flash": {
+      "version": "1.4",
+      "latestVersion": "1.4"
+    },
+    "shell-flyout-positions": {
+      "version": "1.2",
+      "latestVersion": "1.2"
+    },
+    "icon-resource-redirect": {
+      "version": "1.2.5",
+      "latestVersion": "1.2.5"
+    },
+    "uxtheme-hook": {
+      "version": "1.4",
+      "latestVersion": "1.4"
+    }
+  },
+  "os": "10.0.26200"
+}
