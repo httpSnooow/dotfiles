@@ -3,6 +3,7 @@
   "apps": [
     { "Source": "main",       "Name": "chezmoi"              },
     { "Source": "main",       "Name": "git"                  },
+    { "Source": "main",       "Name": "neovim"               },
     { "Source": "main",       "Name": "starship"             },
     { "Source": "main",       "Name": "fastfetch"            },
     { "Source": "main",       "Name": "fzf"                  },
@@ -14,6 +15,7 @@
     { "Source": "extras",     "Name": "whkd"                 },
     { "Source": "extras",     "Name": "komorebi"             },
     { "Source": "extras",     "Name": "flow-launcher"        },
+    { "Source": "extras",     "Name": "powertoys"            },
     { "Source": "extras",     "Name": "yasb"                 },
     { "Source": "nerd-fonts", "Name": "JetBrainsMono-NF"    },
     { "Source": "nerd-fonts", "Name": "JetBrainsMono-NF-Mono" }
