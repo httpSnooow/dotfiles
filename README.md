@@ -14,6 +14,14 @@
 
 ---
 
+## 📸 Screenshots
+
+> *Adicione screenshots em `assets/screenshots/` e atualize esta seção.*
+
+![Desktop](./assets/screenshots/desktop.png)
+
+---
+
 ## 🛠️ Stack
 
 <div align="left">
@@ -61,33 +69,41 @@
 | **WM** | Komorebi | `.config/komorebi/komorebi.json` |
 | **Bar** | YASB | `.config/yasb/config.yaml` + `styles.css` |
 | **Browser** | Zen Browser | `chrome/userChrome.css` + tema **Nebula** (15 CSS modules) + `zen-keyboard-shortcuts.json` |
-| **Editor** | VSCode | `AppData/Roaming/Code/User/settings.json` |
-| **Editor** | Antigravity IDE | `settings.json` + `keybindings.json` |
+| **Editor** | VSCode | `AppData/Roaming/Code/User/settings.json` + `extensions.json` |
+| **Editor** | Antigravity IDE | `settings.json` + `keybindings.json` + `extensions.json` |
 | **System** | Windhawk | `userprofile.json` — 24 mods ativos *(ver nota abaixo)* |
-| **Package** | Scoop | `.config/scoop/config.json` |
+| **Package** | Scoop | `.config/scoop/config.json` + `packages.json` |
+| **Colors** | Paleta global | `.config/colors/palette.yaml` |
+| **Bootstrap** | Script de restore | `bootstrap.ps1` |
 
 ---
 
 ## ⚡ Instalação
 
-### Pré-requisitos
+### 🚀 Método preferido — bootstrap completo
+
+Em uma instalação limpa do Windows 11, abra o **PowerShell** e execute:
 
 ```powershell
-# Instalar Scoop (se não tiver)
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
+irm https://raw.githubusercontent.com/httpSnooow/dotfiles/main/bootstrap.ps1 | iex
+```
+
+O script cuida de tudo: instala Scoop, todos os apps, aplica os dotfiles via chezmoi e instala as extensões dos editores.
+
+### Manual — passo a passo
+
+```powershell
+# 1. Instalar Scoop
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 irm get.scoop.sh | iex
 
-# Instalar chezmoi
+# 2. Instalar chezmoi
 scoop install chezmoi
-```
 
-### Restaurar tudo com um único comando
-
-```powershell
+# 3. Restaurar dotfiles
 chezmoi init --apply https://github.com/httpSnooow/dotfiles.git
 ```
-
-Isso vai clonar o repositório e aplicar todos os configs na máquina automaticamente.
 
 ---
 
@@ -112,6 +128,73 @@ git push
 
 ---
 
+## ⌨️ Keybindings
+
+### GlazeWM
+
+| Atalho | Ação |
+| :--- | :--- |
+| `Alt + H/J/K/L` | Mover foco ← ↓ ↑ → |
+| `Alt + ←/↓/↑/→` | Mover foco (arrow keys) |
+| `Alt + Shift + H/J/K/L` | Mover janela ← ↓ ↑ → |
+| `Alt + Enter` | Abrir WezTerm |
+| `Alt + Shift + Q` | Fechar janela |
+| `Alt + F` | Toggle fullscreen |
+| `Alt + T` | Toggle tiling |
+| `Alt + Shift + Space` | Toggle floating |
+| `Alt + M` | Minimizar janela |
+| `Alt + V` | Alternar direção de tiling |
+| `Alt + R` | Entrar em modo resize |
+| `Alt + U/I/O/P` | Redimensionar janela |
+| `Alt + 1–9` | Focar workspace 1–9 |
+| `Alt + Shift + 1–9` | Mover janela para workspace 1–9 |
+| `Alt + S / Alt + A` | Próximo / anterior workspace |
+| `Alt + D` | Workspace recente |
+| `Alt + Shift + R` | Recarregar config |
+| `Alt + Shift + E` | Sair do GlazeWM |
+| `Alt + Shift + P` | Toggle modo pause |
+
+### whkd (Komorebi)
+
+| Atalho | Ação |
+| :--- | :--- |
+| `Alt + Q` | Fechar janela (`komorebic close`) |
+| `Alt + F` | Toggle float (`komorebic toggle-float`) |
+| `Alt + Return` | Abrir terminal |
+| `Alt + ←/↓/↑/→` | Mover foco entre janelas |
+| `Alt + Shift + ←/↓/↑/→` | Mover janela |
+
+---
+
+## 🎨 Color Palette
+
+Paleta centralizada em [`.config/colors/palette.yaml`](./.config/colors/palette.yaml).  
+Baseada em **Rose Pine** com customizações do tema Nebula (Zen Browser) e WezTerm.
+
+### Base
+
+| Nome | Hex | Preview | Uso |
+| :--- | :--- | :---: | :--- |
+| `background` | `#0c0b0f` | ![#0c0b0f](https://via.placeholder.com/16/0c0b0f/0c0b0f.png) | WezTerm bg, tab bar |
+| `surface` | `#1a1720` | ![#1a1720](https://via.placeholder.com/16/1a1720/1a1720.png) | Painéis, cards |
+| `overlay` | `#26222f` | ![#26222f](https://via.placeholder.com/16/26222f/26222f.png) | Modais, menus |
+| `muted` | `#6e6a86` | ![#6e6a86](https://via.placeholder.com/16/6e6a86/6e6a86.png) | Comentários, ícones inativos |
+| `text` | `#f8f2f5` | ![#f8f2f5](https://via.placeholder.com/16/f8f2f5/f8f2f5.png) | Texto principal |
+| `subtle` | `#908caa` | ![#908caa](https://via.placeholder.com/16/908caa/908caa.png) | Delimitadores |
+
+### Acentos
+
+| Nome | Hex | Preview | Uso |
+| :--- | :--- | :---: | :--- |
+| `rose` ⭐ | `#bea3c7` | ![#bea3c7](https://via.placeholder.com/16/bea3c7/bea3c7.png) | **Acento primário** — cursor, border ativo |
+| `iris` | `#c4a7e7` | ![#c4a7e7](https://via.placeholder.com/16/c4a7e7/c4a7e7.png) | Keywords, funções |
+| `foam` | `#9ccfd8` | ![#9ccfd8](https://via.placeholder.com/16/9ccfd8/9ccfd8.png) | Links, info |
+| `pine` | `#31748f` | ![#31748f](https://via.placeholder.com/16/31748f/31748f.png) | Sucesso, git add |
+| `gold` | `#f6c177` | ![#f6c177](https://via.placeholder.com/16/f6c177/f6c177.png) | Warnings, git mod |
+| `love` | `#eb6f92` | ![#eb6f92](https://via.placeholder.com/16/eb6f92/eb6f92.png) | Erros, git del |
+
+---
+
 ## ⚠️ Windhawk — Restore Manual
 
 O Windhawk armazena o perfil em `C:\ProgramData\Windhawk\` — fora do `$HOME`, portanto fora do escopo automático do chezmoi. O arquivo está salvo em [`windhawk/userprofile.json`](./windhawk/userprofile.json).
@@ -125,10 +208,10 @@ O Windhawk armazena o perfil em `C:\ProgramData\Windhawk\` — fora do `$HOME`, 
 Copy-Item ".\windhawk\userprofile.json" "C:\ProgramData\Windhawk\userprofile.json" -Force
 ```
 
-3. Reinicie o Windhawk — todos os 19 mods serão reimportados.
+3. Reinicie o Windhawk — todos os 24 mods serão reimportados.
 
 <details>
-<summary>📋 Mods ativos (19)</summary>
+<summary>📋 Mods ativos (24)</summary>
 
 | Mod | Descrição |
 | :--- | :--- |
@@ -136,6 +219,8 @@ Copy-Item ".\windhawk\userprofile.json" "C:\ProgramData\Windhawk\userprofile.jso
 | `taskbar-icon-size` | Tamanho dos ícones |
 | `taskbar-start-button-position` | Posição do botão Start |
 | `taskbar-dock-animation` | Animação de dock |
+| `taskbar-dock-animation-plus` | Animação de dock aprimorada |
+| `taskbar-elastic-pill` | Pill elástica na taskbar |
 | `taskbar-tray-system-icon-tweaks` | Tweaks no system tray |
 | `windows-11-taskbar-styler` | Estilo da taskbar |
 | `windows-11-start-menu-styler` | Estilo do menu Start |
@@ -143,19 +228,17 @@ Copy-Item ".\windhawk\userprofile.json" "C:\ProgramData\Windhawk\userprofile.jso
 | `windows-11-notification-center-styler` | Estilo do centro de notificações |
 | `windows-11-file-explorer-styler` | Estilo do File Explorer |
 | `translucent-windows` | Janelas translúcidas |
+| `windows-animations` | Controle de animações do Windows |
 | `dark-menus` | Menus escuros |
 | `invisible-borders` | Bordas invisíveis |
+| `custom-corner-radius` | Border radius customizado nas janelas |
 | `uxtheme-hook` | Hook para temas customizados |
 | `icon-resource-redirect` | Redirecionamento de ícones |
 | `hide-start-button` | Oculta botão Start original |
 | `shell-flyout-positions` | Posição dos flyouts do shell |
+| `simple-window-switcher` | Alt+Tab alternativo mais simples |
 | `fix-explorer-white-flash` | Corrige flash branco no Explorer |
 | `explorer-details-better-file-sizes` | Melhora exibição de tamanhos de arquivo |
-| `custom-corner-radius` | Border radius customizado nas janelas |
-| `simple-window-switcher` | Alt+Tab alternativo mais simples |
-| `taskbar-dock-animation-plus` | Animação de dock aprimorada |
-| `taskbar-elastic-pill` | Pill elástica na taskbar |
-| `windows-animations` | Controle de animações do Windows |
 
 </details>
 
