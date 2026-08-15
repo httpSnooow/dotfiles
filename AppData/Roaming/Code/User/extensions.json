@@ -1,21 +1,13 @@
 {
-  "_readme": "Lista de extensões recomendadas para o VSCode. Para instalar todas de uma vez: foreach ($ext in (Get-Content extensions.json | ConvertFrom-Json).recommendations) { code --install-extension $ext --force }",
+  "_readme": "Extensões reais instaladas no VSCode. Para reinstalar todas: foreach ($ext in (Get-Content extensions.json | ConvertFrom-Json).recommendations) { code --install-extension $ext --force }",
   "recommendations": [
     "github.github-vscode-theme",
-    "vscodevim.vim",
-    "esbenp.prettier-vscode",
-    "dbaeumer.vscode-eslint",
-    "bradlc.vscode-tailwindcss",
-    "ms-vscode.vscode-typescript-next",
-    "angular.ng-template",
-    "ms-azuretools.vscode-docker",
-    "ms-vscode-remote.remote-containers",
-    "usernamehw.errorlens",
-    "oderwat.indent-rainbow",
-    "naumovs.color-highlight",
     "pkief.material-icon-theme",
-    "streetsidesoftware.code-spell-checker",
-    "streetsidesoftware.code-spell-checker-portuguese-brazilian",
-    "eamodio.gitlens"
+    "pkief.material-product-icons",
+    "asvetliakov.vscode-neovim",
+    "s-nlf-fh.glassit",
+    "usernamehw.errorlens",
+    "sonarsource.sonarlint-vscode",
+    "adpyke.codesnap"
   ]
 }
