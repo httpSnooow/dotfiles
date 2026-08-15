@@ -1,0 +1,119 @@
+# =============================================================================
+# palette.yaml — Source of truth de cores do setup
+#
+# Este arquivo centraliza toda a paleta de cores usada no setup.
+# Baseado em Rose Pine (https://rosepinetheme.com) com customizações
+# extraídas do tema Nebula do Zen Browser e das configs do WezTerm.
+#
+# Referenciado por: GlazeWM, WezTerm, Zebar, userChrome.css
+# Formato: hex (padrão), rgb e hsl disponíveis para cada cor
+# =============================================================================
+
+# ---------------------------------------------------------------------------
+# BASE — Fundos e superfícies
+# ---------------------------------------------------------------------------
+base:
+  # Fundo principal — dark purple quase preto (usado no WezTerm e tab bar)
+  background:
+    name: "base"
+    hex: "#0c0b0f"
+    rgb: "rgb(12, 11, 15)"
+    hsl: "hsl(270, 15%, 5%)"
+
+  # Superfície de painéis/cards levemente mais clara que o fundo
+  surface:
+    name: "surface"
+    hex: "#1a1720"
+    rgb: "rgb(26, 23, 32)"
+    hsl: "hsl(264, 16%, 11%)"
+
+  # Overlay — para modais, menus flutuantes
+  overlay:
+    name: "overlay"
+    hex: "#26222f"
+    rgb: "rgb(38, 34, 47)"
+    hsl: "hsl(264, 16%, 16%)"
+
+  # Muted — comentários, texto desabilitado, ícones inativos
+  muted:
+    name: "muted"
+    hex: "#6e6a86"
+    rgb: "rgb(110, 106, 134)"
+    hsl: "hsl(252, 12%, 47%)"
+
+  # Texto principal
+  text:
+    name: "text"
+    hex: "#f8f2f5"
+    rgb: "rgb(248, 242, 245)"
+    hsl: "hsl(330, 40%, 96%)"
+
+  # Texto sutil — parênteses, delimitadores
+  subtle:
+    name: "subtle"
+    hex: "#908caa"
+    rgb: "rgb(144, 140, 170)"
+    hsl: "hsl(252, 14%, 61%)"
+
+# ---------------------------------------------------------------------------
+# ACENTOS — Cores de destaque (mapeadas ao Rose Pine)
+# ---------------------------------------------------------------------------
+accent:
+  # Love / Red — erros, fechamento de janela
+  love:
+    name: "love"
+    hex: "#eb6f92"
+    rgb: "rgb(235, 111, 146)"
+    hsl: "hsl(343, 76%, 68%)"
+
+  # Gold / Yellow — warnings, modificações git
+  gold:
+    name: "gold"
+    hex: "#f6c177"
+    rgb: "rgb(246, 193, 119)"
+    hsl: "hsl(35, 88%, 72%)"
+
+  # Rose / Pink — acento primário, cursor, bordas de foco (WezTerm + GlazeWM)
+  rose:
+    name: "rose"
+    hex: "#bea3c7"
+    rgb: "rgb(190, 163, 199)"
+    hsl: "hsl(285, 24%, 71%)"
+
+  # Pine / Green — sucesso, adições git, workspaces ativos
+  pine:
+    name: "pine"
+    hex: "#31748f"
+    rgb: "rgb(49, 116, 143)"
+    hsl: "hsl(197, 49%, 38%)"
+
+  # Foam / Cyan — links, info, highlights
+  foam:
+    name: "foam"
+    hex: "#9ccfd8"
+    rgb: "rgb(156, 207, 216)"
+    hsl: "hsl(189, 43%, 73%)"
+
+  # Iris / Purple — keywords, funções, acento secundário
+  iris:
+    name: "iris"
+    hex: "#c4a7e7"
+    rgb: "rgb(196, 167, 231)"
+    hsl: "hsl(275, 57%, 78%)"
+
+# ---------------------------------------------------------------------------
+# EXTRAS — Cores utilitárias do setup
+# ---------------------------------------------------------------------------
+extra:
+  # Border inativo (GlazeWM other_windows)
+  border_inactive:
+    hex: "#a1a1a1"
+    rgb: "rgb(161, 161, 161)"
+    hsl: "hsl(0, 0%, 63%)"
+
+  # Cursor border (WezTerm)
+  cursor:
+    hex: "#bea3c7"
+    rgb: "rgb(190, 163, 199)"
+    hsl: "hsl(285, 24%, 71%)"
+    note: "Mesmo valor que accent.rose — acento primário do setup"
