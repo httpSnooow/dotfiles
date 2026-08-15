@@ -14,14 +14,6 @@
 
 ---
 
-## 📸 Screenshots
-
-> *Adicione screenshots em `assets/screenshots/` e atualize esta seção.*
-
-![Desktop](./assets/screenshots/desktop.png)
-
----
-
 ## 🛠️ Stack
 
 <div align="left">
