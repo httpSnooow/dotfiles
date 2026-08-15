@@ -15,3 +15,9 @@ AppData/Roaming/zebar/downloads/**
 *.dat.log*
 ntuser.*
 NTUSER.*
+
+# Neovim — arquivos de sessão e spell compilados
+AppData/Local/nvim/Session.vim
+AppData/Local/nvim/spell/*.spl
+AppData/Local/nvim/spell/*.add.spl
+AppData/Local/nvim/assets/*.png
