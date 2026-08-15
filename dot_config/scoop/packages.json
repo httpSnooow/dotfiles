@@ -1,0 +1,21 @@
+{
+  "_readme": "Lista de pacotes do setup. Instale todos de uma vez com: foreach ($app in (Get-Content packages.json | ConvertFrom-Json).apps) { scoop install \"$($app.Source)/$($app.Name)\" }",
+  "apps": [
+    { "Source": "main",       "Name": "chezmoi"              },
+    { "Source": "main",       "Name": "git"                  },
+    { "Source": "main",       "Name": "starship"             },
+    { "Source": "main",       "Name": "fastfetch"            },
+    { "Source": "main",       "Name": "fzf"                  },
+    { "Source": "main",       "Name": "ripgrep"              },
+    { "Source": "main",       "Name": "yazi"                 },
+    { "Source": "extras",     "Name": "wezterm"              },
+    { "Source": "extras",     "Name": "glazewm"              },
+    { "Source": "extras",     "Name": "zebar"                },
+    { "Source": "extras",     "Name": "whkd"                 },
+    { "Source": "extras",     "Name": "komorebi"             },
+    { "Source": "extras",     "Name": "flow-launcher"        },
+    { "Source": "extras",     "Name": "yasb"                 },
+    { "Source": "nerd-fonts", "Name": "JetBrainsMono-NF"    },
+    { "Source": "nerd-fonts", "Name": "JetBrainsMono-NF-Mono" }
+  ]
+}
