@@ -9,12 +9,11 @@
   ╚═════╝  ╚═════╝    ╚═╝   ╚══════╝
 ```
 
-<img src="./assets/screenshots/desktop.png" width="49%" />
-<img src="./assets/screenshots/terminal.png" width="49%" />
+<img src="https://placehold.co/1920x1080/0c0b0f/bea3c7.png?text=Desktop" width="49%" />
+<img src="https://placehold.co/1920x1080/0c0b0f/9ccfd8.png?text=Terminal" width="49%" />
 <br>
-<img src="./assets/screenshots/browser.png" width="49%" />
-<img src="./assets/screenshots/editor.png" width="49%" />
-
+<img src="https://placehold.co/1920x1080/0c0b0f/f6c177.png?text=Browser" width="49%" />
+<img src="https://placehold.co/1920x1080/0c0b0f/31748f.png?text=Editor" width="49%" />
 <br>
 
 _"Chaos isn't a pit. Chaos is a ladder."_
