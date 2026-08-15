@@ -9,20 +9,34 @@
   ╚═════╝  ╚═════╝    ╚═╝   ╚══════╝
 ```
 
-
-
-_"Chaos isn't a pit. Chaos is a ladder."_
+*"windows, but make it not look like windows."*
 
 <br>
 
-![Windows 11](https://img.shields.io/badge/Windows_11-0078D4?style=for-the-badge&logo=windows11&logoColor=white&labelColor=191724)
-![GlazeWM](https://img.shields.io/badge/GlazeWM-8B5CF6?style=for-the-badge&logoColor=white&labelColor=191724)
-![WezTerm](https://img.shields.io/badge/WezTerm-4E9A06?style=for-the-badge&logo=windowsterminal&logoColor=white&labelColor=191724)
-![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white&labelColor=191724)
-![Zen Browser](https://img.shields.io/badge/Zen_Browser-FF6611?style=for-the-badge&logo=firefox&logoColor=white&labelColor=191724)
-![chezmoi](https://img.shields.io/badge/chezmoi-1F6FEB?style=for-the-badge&logo=git&logoColor=white&labelColor=191724)
+![Windows 11](https://img.shields.io/badge/Windows_11-0078D4?style=for-the-badge&logo=windows11&logoColor=white&labelColor=0c0b0f)
+![GlazeWM](https://img.shields.io/badge/GlazeWM-8B5CF6?style=for-the-badge&logoColor=white&labelColor=0c0b0f)
+![WezTerm](https://img.shields.io/badge/WezTerm-4E9A06?style=for-the-badge&logo=windowsterminal&logoColor=white&labelColor=0c0b0f)
+![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white&labelColor=0c0b0f)
+![Zen Browser](https://img.shields.io/badge/Zen_Browser-FF6611?style=for-the-badge&logo=firefox&logoColor=white&labelColor=0c0b0f)
+![chezmoi](https://img.shields.io/badge/chezmoi-1F6FEB?style=for-the-badge&logo=git&logoColor=white&labelColor=0c0b0f)
 
 <br>
+
+[![last commit](https://img.shields.io/github/last-commit/httpSnooow/dotfiles?style=for-the-badge&logo=git&logoColor=eb6f92&labelColor=0c0b0f&color=eb6f92)](https://github.com/httpSnooow/dotfiles/commits/main)
+[![repo size](https://img.shields.io/github/repo-size/httpSnooow/dotfiles?style=for-the-badge&logo=files&logoColor=f6c177&labelColor=0c0b0f&color=f6c177)](https://github.com/httpSnooow/dotfiles)
+
+</div>
+
+<div align="center">
+  <img src="./assets/screenshots/desktop.png" width="49%" alt="desktop" />
+  <img src="./assets/screenshots/terminal.png" width="49%" alt="terminal" />
+  <img src="./assets/screenshots/tiling.png" width="49%" alt="tiling" />
+  <img src="./assets/screenshots/editor.png" width="49%" alt="editor" />
+</div>
+
+> screenshots pendentes — [veja como tirar](./assets/screenshots/README.md)
+
+<div align="center">
 
 | Base | Surface | Love | Gold | Rose | Pine | Foam | Iris |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -41,44 +55,51 @@ _"Chaos isn't a pit. Chaos is a ladder."_
 ## install
 
 ```powershell
-# prerequisites: scoop
-irm get.scoop.sh | iex
-scoop install chezmoi
-
-# apply
+irm get.scoop.sh | iex && scoop install chezmoi
 chezmoi init --apply https://github.com/httpSnooow/dotfiles.git
 ```
-*(Windhawk e PowerToys requerem restore manual. Ver pastas respectivas no repo.)*
+
+> windhawk e powertoys: restore manual — ver pastas no repo
 
 <br>
 
-## structure
+## stack details
 
-| Dir / File | Description |
-|:---|:---|
-| `.config/` | Starship, Fastfetch, whkd, YASB, Scoop, Colors |
-| `.glzr/` | GlazeWM, Zebar |
-| `AppData/Local/nvim/` | Neovim config (80+ files) |
-| `chrome/` | Zen Browser Nebula theme |
-| `powertoys/` | PowerToys backup |
-| `windows-terminal/`| Windows Terminal backup |
-| `windhawk/` | Windhawk profiles |
-| `obs/` | OBS Studio scenes & profiles |
-| `.gitconfig` | Git config & aliases |
-| `.wezterm.lua` | WezTerm config |
-| `bootstrap.ps1` | Setup script |
+| tool | config location | purpose |
+|---|---|---|
+| [WezTerm](https://wezfurlong.org/wezterm/) | `.wezterm.lua` | terminal emulator |
+| [Windows Terminal](https://github.com/microsoft/terminal) | `windows-terminal/` | terminal emulator (backup) |
+| [Starship](https://starship.rs) | `.config/starship.toml` | shell prompt |
+| [GlazeWM](https://github.com/glzr-io/glazewm) | `.glzr/glazewm/config.yaml` | tiling window manager |
+| [Zebar](https://github.com/glzr-io/zebar) | `.glzr/zebar/` | status bar |
+| [Komorebi](https://github.com/LGUG2Z/komorebi) | `.config/komorebi/komorebi.json` | tiling window manager (alt) |
+| [whkd](https://github.com/LGUG2Z/whkd) | `.config/whkdrc` | hotkey daemon |
+| [YASB](https://github.com/amnweb/yasb) | `.config/yasb/` | status bar (alt) |
+| [Zen Browser](https://zen-browser.app) | `chrome/` | browser + Nebula theme |
+| [Neovim](https://neovim.io) | `AppData/Local/nvim/` | text editor |
+| [VSCode](https://code.visualstudio.com/) | `AppData/Roaming/Code/User/` | code editor |
+| [Antigravity IDE](https://antigravity.dev/) | `AppData/Roaming/Antigravity IDE/User/` | code editor (alt) |
+| [Windhawk](https://windhawk.net) | `windhawk/` | windows system mods |
+| [PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/) | `powertoys/` | system utilities |
+| [Fastfetch](https://github.com/fastfetch-cli/fastfetch) | `.config/fastfetch/` | system info |
+| [OBS Studio](https://obsproject.com/) | `obs/` | streaming & recording |
+| [Docker](https://www.docker.com/) | `.docker/daemon.json` | containerization |
+| [Scoop](https://scoop.sh/) | `.config/scoop/` | package manager |
+| [chezmoi](https://chezmoi.io) | `.chezmoiignore` | dotfiles manager |
 
 <br>
 
 <details>
-<summary>⌨️ Keybindings</summary>
+<summary>⌨️ keybindings</summary>
 
-### GlazeWM
-| Ação | Atalho |
-|------|--------|
-| Focus left/right/up/down | <kbd>Alt</kbd> + <kbd>H/L/K/J</kbd> ou Setas |
-| Move window left/right/up/down | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>H/L/K/J</kbd> ou Setas |
-| Resize width/height (-/+) | <kbd>Alt</kbd> + <kbd>U/P/I/O</kbd> |
+### glazewm
+
+| action | key |
+|---|---|
+| Focus left/right/up/down | <kbd>Alt</kbd> + <kbd>H</kbd> / <kbd>L</kbd> / <kbd>K</kbd> / <kbd>J</kbd> ou <kbd>Setas</kbd> |
+| Move window left/right/up/down | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>H</kbd> / <kbd>L</kbd> / <kbd>K</kbd> / <kbd>J</kbd> ou <kbd>Setas</kbd> |
+| Resize width (-/+) | <kbd>Alt</kbd> + <kbd>U</kbd> / <kbd>Alt</kbd> + <kbd>P</kbd> |
+| Resize height (-/+) | <kbd>Alt</kbd> + <kbd>I</kbd> / <kbd>Alt</kbd> + <kbd>O</kbd> |
 | Toggle tiling direction | <kbd>Alt</kbd> + <kbd>V</kbd> |
 | Toggle floating | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>Space</kbd> |
 | Toggle tiling | <kbd>Alt</kbd> + <kbd>T</kbd> |
@@ -86,8 +107,8 @@ chezmoi init --apply https://github.com/httpSnooow/dotfiles.git
 | Toggle minimized | <kbd>Alt</kbd> + <kbd>M</kbd> |
 | Close window | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>Q</kbd> |
 | Open terminal (WezTerm) | <kbd>Alt</kbd> + <kbd>Enter</kbd> |
-| Focus workspace 1-9 | <kbd>Alt</kbd> + <kbd>1-9</kbd> |
-| Move to workspace 1-9 | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>1-9</kbd> |
+| Focus workspace 1-9 | <kbd>Alt</kbd> + <kbd>1</kbd>-<kbd>9</kbd> |
+| Move to workspace 1-9 | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>1</kbd>-<kbd>9</kbd> |
 | Next/Prev workspace | <kbd>Alt</kbd> + <kbd>S</kbd> / <kbd>Alt</kbd> + <kbd>A</kbd> |
 | Recent workspace | <kbd>Alt</kbd> + <kbd>D</kbd> |
 | Reload config | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> |
@@ -95,24 +116,25 @@ chezmoi init --apply https://github.com/httpSnooow/dotfiles.git
 | Toggle pause mode | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> |
 | Enter resize mode | <kbd>Alt</kbd> + <kbd>R</kbd> |
 
-### Komorebi (whkd)
-| Ação | Atalho |
-|------|--------|
+### komorebi / whkd
+
+| action | key |
+|---|---|
 | Close window | <kbd>Alt</kbd> + <kbd>Q</kbd> |
 | Toggle float | <kbd>Alt</kbd> + <kbd>F</kbd> |
 | Open terminal (Windows Terminal) | <kbd>Alt</kbd> + <kbd>Return</kbd> |
-| Focus left/right/up/down | <kbd>Alt</kbd> + <kbd>Setas</kbd> |
-| Move left/right/up/down | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>Setas</kbd> |
+| Focus left/down/up/right | <kbd>Alt</kbd> + <kbd>Setas</kbd> |
+| Move left/down/up/right | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>Setas</kbd> |
 
 </details>
 
 <br>
 
 <details>
-<summary>🛠️ Windhawk Mods</summary>
+<summary>🪟 windhawk mods (24 ativos)</summary>
 
-| Mod | Description |
-|:---|:---|
+| mod | description |
+|---|---|
 | `taskbar-vertical` | Taskbar vertical |
 | `taskbar-icon-size` | Tamanho dos ícones |
 | `taskbar-start-button-position` | Posição do botão Start |
@@ -142,6 +164,21 @@ chezmoi init --apply https://github.com/httpSnooow/dotfiles.git
 
 <br>
 
+<details>
+<summary>🏷️ topics sugeridos para o repositório</summary>
+
+Vá em Settings → Topics e adicione:
+`dotfiles` `windows` `windows-11` `ricing` `glazewm` `wezterm` `chezmoi` `rose-pine` `powershell` `starship`
+
+</details>
+
+<br>
+
 <div align="center">
-  <sub>crafted with 🖤 on windows 11 · <a href="https://github.com/httpSnooow">httpSnooow</a></sub>
+  <sub>crafted with 🖤 on windows 11 &nbsp;·&nbsp; <a href="https://github.com/httpSnooow">httpSnooow</a></sub>
 </div>
+
+<!-- 
+  para ativar o social preview:
+  settings → (no github) → social preview → upload .github/assets/social-preview.svg
+-->

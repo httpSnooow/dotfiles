@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640">
+  <!-- Background -->
+  <rect width="1280" height="640" fill="#0c0b0f"/>
+  
+  <!-- Main Title -->
+  <text x="640" y="320" font-family="Consolas, 'Courier New', monospace" font-size="120" font-weight="bold" fill="#f8f2f5" text-anchor="middle">dotfiles</text>
+  
+  <!-- Subtitle -->
+  <text x="640" y="420" font-family="Consolas, 'Courier New', monospace" font-size="36" fill="#6e6a86" text-anchor="middle">windows 11 · rose pine · glazewm</text>
+  
+  <!-- Color Blocks -->
+  <g transform="translate(480, 500)">
+    <rect x="0" y="0" width="60" height="20" fill="#eb6f92" rx="4"/>
+    <rect x="80" y="0" width="60" height="20" fill="#f6c177" rx="4"/>
+    <rect x="160" y="0" width="60" height="20" fill="#31748f" rx="4"/>
+    <rect x="240" y="0" width="60" height="20" fill="#c4a7e7" rx="4"/>
+  </g>
+</svg>
