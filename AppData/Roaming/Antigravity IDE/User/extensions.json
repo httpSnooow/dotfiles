@@ -1,0 +1,23 @@
+{
+  "_readme": "Lista de extensões recomendadas para o Antigravity IDE. Para instalar todas de uma vez: foreach ($ext in (Get-Content extensions.json | ConvertFrom-Json).recommendations) { agy --install-extension $ext --force }",
+  "recommendations": [
+    "github.github-vscode-theme",
+    "vscodevim.vim",
+    "s-nlf-fh.glassit",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "ms-vscode.vscode-typescript-next",
+    "angular.ng-template",
+    "fwcd.kotlin",
+    "dart-code.dart-code",
+    "dart-code.flutter",
+    "ms-azuretools.vscode-docker",
+    "usernamehw.errorlens",
+    "oderwat.indent-rainbow",
+    "naumovs.color-highlight",
+    "pkief.material-icon-theme",
+    "eamodio.gitlens",
+    "streetsidesoftware.code-spell-checker",
+    "streetsidesoftware.code-spell-checker-portuguese-brazilian"
+  ]
+}
