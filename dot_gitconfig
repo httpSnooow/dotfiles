@@ -1,3 +1,6 @@
 [user]
 	name = httpSnooow
 	email = seu@email.com
+
+[core]
+	excludesfile = ~/.gitignore_global
