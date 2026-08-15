@@ -52,6 +52,7 @@
 | Categoria | Programa | Arquivo(s) |
 | :--- | :--- | :--- |
 | **Terminal** | WezTerm | `.wezterm.lua` |
+| **Terminal** | Windows Terminal | `windows-terminal/settings.json` *(restore manual)* |
 | **Terminal** | Starship | `.config/starship.toml` |
 | **Shell** | PowerShell | `Documents/WindowsPowerShell/profile.ps1` |
 | **Shell** | whkd | `.config/whkdrc` |
@@ -61,9 +62,14 @@
 | **WM** | Komorebi | `.config/komorebi/komorebi.json` |
 | **Bar** | YASB | `.config/yasb/config.yaml` + `styles.css` |
 | **Browser** | Zen Browser | `chrome/userChrome.css` + tema **Nebula** (15 CSS modules) + `zen-keyboard-shortcuts.json` |
+| **Editor** | Neovim | `AppData/Local/nvim/` (80+ arquivos Lua, plugins, keymaps, snippets) |
 | **Editor** | VSCode | `AppData/Roaming/Code/User/settings.json` + `extensions.json` |
 | **Editor** | Antigravity IDE | `settings.json` + `keybindings.json` + `extensions.json` |
-| **System** | Windhawk | `userprofile.json` — 24 mods ativos *(ver nota abaixo)* |
+| **Git** | Git Config | `.gitconfig` + `.gitignore_global` |
+| **System** | PowerToys | `powertoys/settings.json` + Keyboard Manager + Run *(restore manual)* |
+| **System** | Windhawk | `userprofile.json` — 24 mods ativos *(restore manual)* |
+| **System** | Docker | `.docker/daemon.json` |
+| **Streaming**| OBS Studio | `obs/` (scenes, profiles, settings) *(restore manual)* |
 | **Package** | Scoop | `.config/scoop/config.json` + `packages.json` |
 | **Colors** | Paleta global | `.config/colors/palette.yaml` |
 | **Bootstrap** | Script de restore | `bootstrap.ps1` |
