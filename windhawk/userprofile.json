@@ -7,15 +7,15 @@
   "mods": {
     "windows-11-start-menu-styler": {
       "version": "1.4.1",
-      "latestVersion": "1.5.2"
+      "latestVersion": "1.6"
     },
     "windows-11-taskbar-styler": {
-      "version": "1.7",
-      "latestVersion": "1.7"
+      "version": "1.8",
+      "latestVersion": "1.8"
     },
     "windows-11-file-explorer-styler": {
       "version": "1.4",
-      "latestVersion": "1.4"
+      "latestVersion": "1.5"
     },
     "taskbar-icon-size": {
       "version": "1.3.6",
@@ -24,29 +24,31 @@
     },
     "taskbar-vertical": {
       "version": "1.3.10",
-      "latestVersion": "1.3.11",
+      "latestVersion": "1.3.13",
       "disabled": true
     },
     "explorer-details-better-file-sizes": {
       "version": "1.5",
-      "latestVersion": "1.5"
+      "latestVersion": "1.5.1"
     },
     "taskbar-dock-animation": {
       "version": "1.9.2",
-      "latestVersion": "1.9.2"
+      "latestVersion": "1.9.2",
+      "disabled": true
     },
     "translucent-windows": {
       "version": "1.7.4",
-      "latestVersion": "1.7.4"
+      "latestVersion": "1.8.0"
     },
     "dark-menus": {
       "version": "1.4.2",
-      "latestVersion": "1.4.2"
+      "latestVersion": "1.4.2",
+      "disabled": true
     },
     "taskbar-start-button-position": {
       "version": "1.2.4",
       "disabled": true,
-      "latestVersion": "1.2.4"
+      "latestVersion": "1.3.2"
     },
     "hide-start-button": {
       "version": "1.0",
@@ -55,11 +57,11 @@
     "windows-11-start-menu-buttons": {
       "version": "2.1",
       "disabled": true,
-      "latestVersion": "2.1"
+      "latestVersion": "2.2"
     },
     "windows-11-notification-center-styler": {
       "version": "1.5",
-      "latestVersion": "1.5"
+      "latestVersion": "1.6"
     },
     "taskbar-tray-system-icon-tweaks": {
       "version": "1.3",
@@ -75,15 +77,36 @@
     },
     "shell-flyout-positions": {
       "version": "1.2",
-      "latestVersion": "1.2"
+      "latestVersion": "1.3"
     },
     "icon-resource-redirect": {
       "version": "1.2.5",
-      "latestVersion": "1.2.5"
+      "latestVersion": "1.3"
     },
     "uxtheme-hook": {
       "version": "1.4",
       "latestVersion": "1.4"
+    },
+    "windows-animations": {
+      "version": "1.2.0",
+      "latestVersion": "1.2.0"
+    },
+    "taskbar-dock-animation-plus": {
+      "version": "2.0.1",
+      "latestVersion": "2.0.1"
+    },
+    "taskbar-elastic-pill": {
+      "version": "2.0.1",
+      "latestVersion": "2.0.1"
+    },
+    "simple-window-switcher": {
+      "version": "2.0",
+      "latestVersion": "2.0"
+    },
+    "custom-corner-radius": {
+      "version": "1.3",
+      "disabled": true,
+      "latestVersion": "1.3"
     }
   },
   "os": "10.0.26200"

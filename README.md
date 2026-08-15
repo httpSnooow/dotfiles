@@ -40,7 +40,7 @@
 
 **System Customization**
 
-![Windhawk](https://img.shields.io/badge/Windhawk-19_mods-F59E0B?style=for-the-badge&logoColor=white)
+![Windhawk](https://img.shields.io/badge/Windhawk-24_mods-F59E0B?style=for-the-badge&logoColor=white)
 ![Fastfetch](https://img.shields.io/badge/Fastfetch-system_info-22D3EE?style=for-the-badge&logoColor=white)
 
 </div>
@@ -63,7 +63,7 @@
 | **Browser** | Zen Browser | `chrome/userChrome.css` + tema **Nebula** (15 CSS modules) + `zen-keyboard-shortcuts.json` |
 | **Editor** | VSCode | `AppData/Roaming/Code/User/settings.json` |
 | **Editor** | Antigravity IDE | `settings.json` + `keybindings.json` |
-| **System** | Windhawk | `userprofile.json` — 19 mods ativos *(ver nota abaixo)* |
+| **System** | Windhawk | `userprofile.json` — 24 mods ativos *(ver nota abaixo)* |
 | **Package** | Scoop | `.config/scoop/config.json` |
 
 ---
@@ -151,6 +151,11 @@ Copy-Item ".\windhawk\userprofile.json" "C:\ProgramData\Windhawk\userprofile.jso
 | `shell-flyout-positions` | Posição dos flyouts do shell |
 | `fix-explorer-white-flash` | Corrige flash branco no Explorer |
 | `explorer-details-better-file-sizes` | Melhora exibição de tamanhos de arquivo |
+| `custom-corner-radius` | Border radius customizado nas janelas |
+| `simple-window-switcher` | Alt+Tab alternativo mais simples |
+| `taskbar-dock-animation-plus` | Animação de dock aprimorada |
+| `taskbar-elastic-pill` | Pill elástica na taskbar |
+| `windows-animations` | Controle de animações do Windows |
 
 </details>
 
